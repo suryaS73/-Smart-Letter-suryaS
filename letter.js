@@ -82,7 +82,7 @@ function data()
      var name=localStorage.getItem("from",from)
      var size=localStorage.getItem("size",size)
      document.getElementById("from").innerHTML=name
-     document.getElementById("from").style.fontSize=(size-15)+"px"
+     document.getElementById("from").style.fontSize=(size-20)+"px"
      var hcolor=localStorage.getItem("hcolor",hcolor)
      document.getElementById("letter").style.fontSize=size+"px"
      document.getElementById("letter").style.color=hcolor
@@ -91,7 +91,7 @@ function data()
      document.getElementById("fromad").innerHTML=ad
      var to=localStorage.getItem("to",to)
      document.getElementById("to").innerHTML=to
-     document.getElementById("to").style.fontSize=(size-15)+"px"
+     document.getElementById("to").style.fontSize=(size-20)+"px"
      document.getElementById("to").style.color=hcolor
      var toad=localStorage.getItem("toadd",toad)
      document.getElementById("toad").innerHTML=toad
