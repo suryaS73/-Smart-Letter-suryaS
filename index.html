@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Letter Style</title>
+     <link rel="stylesheet" href="./letter style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <script src="./letter.js" defer></script>
+     <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+     <div id="header">
+               <h1 id="heading">Welcome to Smart Letter</h1>
+     </div>
+     <div id="font">
+          <h1 id="heading1">Heading</h1>
+          <input type="range" id="range" oninput="slide()"  min="10" max="150" value="10">
+          <input type="color" oninput="color()" id="hcol">
+     </div>
+     
+     <div id="background">
+          <h1 id="font1">Background</h1>
+          <span id="icon">
+          <i class="fa-sharp fa-solid fa-align-right" onclick="right()"></i>
+          <i class="fa-sharp fa-solid fa-align-left" onclick="left()"></i>
+          <i class="fa-sharp fa-solid fa-align-justify" onclick="justify()"></i>
+          <i class="fa-sharp fa-solid fa-align-center" onclick="center()"></i>
+          </span>
+          <input type="color" oninput="backcol()" id="backg">
+     </div>
+     <div id="body">
+          <h4 id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, esse?
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus!
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, tempora.
+          </h4>
+          <input type="color" oninput="fontcol()" id="fontcolor">
+     </div>
+     <form id="input" action="./outputletter.html">
+          
+          <h1>From Name</h1>
+          <input placeholder=" Enter your Name" id="fromname">
+          <h1>From Address</h1>
+          <input  placeholder="Enter yout Address" id="fromadd">
+          <h1>Todays Date</h1>
+          <input type="date" id="today">
+          <h1>To Name</h1>
+          <input placeholder="Enter Name" id="toname">
+          <h1>To Address</h1>
+          <input placeholder="To Address" id="toadd">
+          <h1>Sub</h1>
+          <span>
+          <select id="s">
+               <option value="Sir">Sir</option>
+               <option >Madam</option>
+          </select>
+          <input placeholder="Subject" id="subject">
+          </span>
+          <h1>Reason</h1>
+          <textarea placeholder="Reason" id="reasonin"></textarea>
+          <h1>From</h1>
+          <input type="date" id="frdate"><h1>To</h1><input type="date" id="todate">
+          <h1>Number of Days</h1>
+          <input placeholder="How many days" id="days">
+          <input type="submit" value="Generate the Form" onclick="store()">
+     </form>
+</body>
+</html>
