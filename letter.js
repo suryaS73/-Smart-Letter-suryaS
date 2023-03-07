@@ -1,3 +1,4 @@
+alert("If it is Mobile Always keep in desktop mode")
 function slide()
 {   
      var size=document.getElementById("range").value
